@@ -37,3 +37,7 @@ export function renderListWithTemplate(template, parentElement, list, position =
   }
   parentElement.insertAdjacentHTML(position, htmlStrings.join(""));
 }
+
+export function setContent(selector, content) {
+  qs(selector).innerHTML = content;
+}
