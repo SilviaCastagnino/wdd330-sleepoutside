@@ -21,6 +21,7 @@ export default class ProductDetails {
     }
 
     renderProductDetails() {
+        console.log(this.product)
         productDetailsTemplate(this.product);
     }
 }
@@ -28,9 +29,9 @@ export default class ProductDetails {
 function productDetailsTemplate(product) {
     setContent("#productName", product.Brand.Name);
     setContent("#productNameWithoutBrand", product.NameWithoutBrand);
-    qs("#productImage").setAttribute("src", product.Image)
+    qs("#productImage").setAttribute("src", product.Images.PrimaryLarge)
     qs("#productImage").setAttribute("alt", product.NameWithoutBrand)
-    setContent("#productFinalPrice", product.finalPrice);
+    setContent("#productFinalPrice", product.FinalPrice);
     setContent("#productColorName", product.Colors[0].ColorName);
     setContent("#productDescriptionHtmlSimple", product.DescriptionHtmlSimple);
     qs("#addToCart").setAttribute("data-id", product.Id);
