@@ -168,6 +168,20 @@ button {
   color: var(--dark-grey);
 }
 
+/* Styles for Product Category Display */
+.product-categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0.25em;
+  padding: 0.5em;
+  text-align: center;
+}
+
+.product-categories img {
+  width: 150px;
+  height: auto;
+}
+
 /* Styles for product lists */
 .product-card {
   flex: 1 1 45%;
