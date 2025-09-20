@@ -26,7 +26,6 @@ export default class ProductDetails {
 }
 
 function productDetailsTemplate(product) {
-    console.log(product)
     setContent("#productName", product.Brand.Name);
     setContent("#productNameWithoutBrand", product.NameWithoutBrand);
     qs("#productImage").setAttribute("src", product.Image)
